@@ -119,10 +119,10 @@ export function About() {
                       <p className="text-gray-400 text-sm">{item.tech}</p>
                     </Card>
                   </div>
-                  <div className="relative z-10">
+                  <div className="absolute left-1/2 -translate-x-1/2 z-10">
                     <div className="w-4 h-4 rounded-full bg-gradient-to-r from-cyan-500 to-emerald-500 shadow-lg shadow-cyan-500/50" />
                   </div>
-                  <div className="flex-1 text-2xl font-bold text-gray-500">{item.year}</div>
+                  <div className={`flex-1 text-2xl font-bold text-gray-500 ${index % 2 === 0 ? "text-left pl-6" : "text-right pr-6"}`}>{item.year}</div>
                 </motion.div>
               ))}
             </div>

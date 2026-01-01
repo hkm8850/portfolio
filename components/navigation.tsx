@@ -8,12 +8,12 @@ export function Navigation() {
   const [activeSection, setActiveSection] = useState("hero")
 
   const sections = [
-    { id: "hero", label: "Home" },
-    { id: "about", label: "About" },
-    { id: "skills", label: "Skills" },
-    { id: "cv", label: "CV" },
-    { id: "projects", label: "Projects" },
-    { id: "contact", label: "Contact" },
+    { id: "welcome", label: "Welcome" },
+    { id: "engineering-course", label: "Engineering Course" },
+    { id: "international-mobility", label: "International Mobility" },
+    { id: "sustainability-civic", label: "Sustainability & Civic" },
+    { id: "sport-activities", label: "Sport & Activities" },
+    { id: "career-development", label: "Career Development" },
   ]
 
   const scrollToSection = (id: string) => {

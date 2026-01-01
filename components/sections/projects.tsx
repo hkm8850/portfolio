@@ -85,112 +85,44 @@ export function Projects() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6">
-          {projects.map((project, index) => (
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-col items-center justify-center py-20"
+        >
+          <div className="text-center max-w-2xl">
             <motion.div
-              key={project.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              onHoverStart={() => setHoveredProject(index)}
-              onHoverEnd={() => setHoveredProject(null)}
+              animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 3, repeat: Infinity }}
+              className="mb-8"
             >
-              <Card className="p-8 bg-gradient-to-br from-cyan-500/10 to-emerald-500/10 border-cyan-500/30 backdrop-blur-sm hover:border-cyan-400/50 transition-all duration-300 group h-full flex flex-col relative overflow-hidden">
-                <motion.div
-                  className="absolute top-4 right-4"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{
-                    opacity: hoveredProject === index ? 1 : 0,
-                    scale: hoveredProject === index ? 1 : 0.8,
-                  }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <MiniChart type={project.chartType} color={project.chartColor} />
-                </motion.div>
-
-                <div className="flex items-start gap-4 mb-4">
-                  <motion.div
-                    className={`p-3 rounded-lg bg-gradient-to-br ${project.color} flex-shrink-0`}
-                    whileHover={{ scale: 1.1, rotate: 5 }}
-                    transition={{ type: "spring", stiffness: 400 }}
-                  >
-                    <project.icon className="w-6 h-6 text-white" />
-                  </motion.div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold text-cyan-400 mb-2 group-hover:text-cyan-300 transition-colors">
-                      {project.title}
-                    </h3>
-                  </div>
-                </div>
-
-                <p className="text-gray-300 mb-4 leading-relaxed flex-1">{project.description}</p>
-
-                <motion.div
-                  className="mb-4 grid grid-cols-3 gap-2"
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{
-                    opacity: hoveredProject === index ? 1 : 0,
-                    height: hoveredProject === index ? "auto" : 0,
-                  }}
-                  transition={{ duration: 0.3 }}
-                >
-                  {Object.entries(project.metrics).map(([key, value]) => (
-                    <div key={key} className="text-center p-2 bg-cyan-500/10 rounded border border-cyan-500/30">
-                      <div className="text-xs text-gray-400 uppercase">{key}</div>
-                      <div className="text-sm font-bold text-cyan-400">{value}</div>
-                    </div>
-                  ))}
-                </motion.div>
-
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.tags.map((tag) => (
-                    <Badge
-                      key={tag}
-                      variant="outline"
-                      className="border-emerald-500/50 bg-emerald-500/10 text-emerald-300 text-xs"
-                    >
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
-
-                <div className="flex gap-3">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="flex-1 border-cyan-500/50 text-cyan-400 hover:bg-cyan-500/10 hover:text-cyan-300 bg-transparent"
-                    asChild
-                  >
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <Github className="w-4 h-4 mr-2" />
-                      Code
-                    </a>
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="flex-1 border-emerald-500/50 text-emerald-400 hover:bg-emerald-500/10 hover:text-emerald-300 bg-transparent"
-                    asChild
-                  >
-                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Demo
-                    </a>
-                  </Button>
-                </div>
-
-                {/* Animated glow effect */}
-                <motion.div
-                  className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
-                  style={{
-                    background: `radial-gradient(circle at 50% 50%, rgba(0, 229, 255, 0.1), transparent 70%)`,
-                  }}
-                />
-              </Card>
+              <div className="inline-block p-6 rounded-full bg-gradient-to-br from-cyan-500/20 to-emerald-500/20 border border-cyan-500/30">
+                <Brain className="w-16 h-16 text-cyan-400" />
+              </div>
             </motion.div>
-          ))}
-        </div>
+            <h3 className="text-3xl md:text-4xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
+                Coming Soon
+              </span>
+            </h3>
+            <p className="text-gray-300 text-lg leading-relaxed mb-8">
+              I'm currently working on exciting data science and HPC projects. Check back soon to see innovative solutions in machine learning, distributed computing, and big data analytics!
+            </p>
+            <div className="flex flex-wrap gap-3 justify-center">
+              <Badge className="bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 px-4 py-2">
+                Machine Learning Projects
+              </Badge>
+              <Badge className="bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 px-4 py-2">
+                HPC Implementations
+              </Badge>
+              <Badge className="bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 px-4 py-2">
+                Big Data Pipelines
+              </Badge>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   )

@@ -1,12 +1,12 @@
 "use client"
 
 import { useState } from "react"
-import { Hero } from "@/components/sections/hero"
-import { About } from "@/components/sections/about"
-import { Skills } from "@/components/sections/skills"
+import { Welcome } from "@/components/sections/welcome"
+import { EngineeringCourse } from "@/components/sections/engineering-course"
+import { InternationalMobility } from "@/components/sections/international-mobility"
+import { SustainabilityCivic } from "@/components/sections/sustainability-civic"
+import { SportActivities } from "@/components/sections/sport-activities"
 import { CV } from "@/components/sections/cv"
-import { Projects } from "@/components/sections/projects"
-import { Contact } from "@/components/sections/contact"
 import { Navigation } from "@/components/navigation"
 import { ParticleBackground } from "@/components/particle-background"
 import { MatrixRain } from "@/components/matrix-rain"
@@ -28,16 +28,16 @@ export default function Home() {
           <Navigation />
 
           <main>
-            <Hero />
-            <About />
-            <Skills />
+            <Welcome />
+            <EngineeringCourse />
+            <InternationalMobility />
+            <SustainabilityCivic />
+            <SportActivities />
             <CV />
-            <Projects />
-            <Contact />
           </main>
 
           <footer className="relative z-10 border-t border-cyan-500/20 py-8 text-center text-sm text-gray-400">
-            <p>© 2025 Data Science Portfolio. Built with Next.js & TailwindCSS</p>
+            <p>© 2026 ePortfolio @ N7. Built with Next.js & TailwindCSS</p>
           </footer>
         </div>
       )}

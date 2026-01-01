@@ -62,7 +62,7 @@ export function CV() {
   ]
 
   return (
-    <section id="cv" className="relative py-32 px-4">
+    <section id="career-development" className="relative py-32 px-4 scroll-mt-[72px]">
       <div className="container mx-auto max-w-6xl z-10 relative">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -73,16 +73,19 @@ export function CV() {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
-              Curriculum Vitae
+              Career Development
             </span>
           </h2>
           <p className="text-gray-400 text-lg mb-8">My academic and professional journey</p>
           <Button
+            asChild
             className="bg-gradient-to-r from-cyan-500 to-emerald-500 hover:from-cyan-600 hover:to-emerald-600 text-white font-semibold px-8 py-6 text-lg shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/50 transition-all duration-300"
             size="lg"
           >
-            <Download className="w-5 h-5 mr-2" />
-            Download CV
+            <a href="/cv.pdf" download="Hamza_Kalim_CV.pdf">
+              <Download className="w-5 h-5 mr-2" />
+              Download CV
+            </a>
           </Button>
         </motion.div>
 
