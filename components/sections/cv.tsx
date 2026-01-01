@@ -77,16 +77,40 @@ export function CV() {
             </span>
           </h2>
           <p className="text-gray-400 text-lg mb-8">My academic and professional journey</p>
-          <Button
-            asChild
-            className="bg-gradient-to-r from-cyan-500 to-emerald-500 hover:from-cyan-600 hover:to-emerald-600 text-white font-semibold px-8 py-6 text-lg shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/50 transition-all duration-300"
-            size="lg"
-          >
-            <a href="/cv.pdf" download="Hamza_Kalim_CV.pdf">
-              <Download className="w-5 h-5 mr-2" />
-              Download CV
-            </a>
-          </Button>
+          <div className="flex justify-center gap-4">
+            <Button
+              asChild
+              className="bg-gradient-to-r from-cyan-500 to-emerald-500 hover:from-cyan-600 hover:to-emerald-600 text-white font-semibold px-6 py-3 text-base shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/50 transition-all duration-300"
+              size="lg"
+            >
+              <a href="/cv_fr.pdf" download="Hamza_Kalim_CV_FR.pdf">
+                <Download className="w-5 h-5 mr-2" />
+                CV (FR)
+              </a>
+            </Button>
+
+            <Button
+              asChild
+              className="bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-600 hover:to-cyan-600 text-white font-semibold px-6 py-3 text-base shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40 transition-all duration-300"
+              size="lg"
+            >
+              <a href="/cv_en.pdf" download="Hamza_Kalim_CV_EN.pdf">
+                <Download className="w-5 h-5 mr-2" />
+                CV (EN)
+              </a>
+            </Button>
+
+            <Button
+              asChild
+              className="bg-gradient-to-r from-amber-400 to-orange-400 hover:from-amber-500 hover:to-orange-500 text-white font-semibold px-6 py-3 text-base shadow-lg shadow-amber-400/25 hover:shadow-amber-400/40 transition-all duration-300"
+              size="lg"
+            >
+              <a href="/presentation.pptx" download="Hamza_Kalim_Presentation.pptx">
+                <Download className="w-5 h-5 mr-2" />
+                Download PPP
+              </a>
+            </Button>
+          </div>
         </motion.div>
 
         {/* Education */}
