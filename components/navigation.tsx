@@ -14,6 +14,7 @@ export function Navigation() {
     { id: "sustainability-civic", label: "Sustainability & Civic" },
     { id: "sport-activities", label: "Sport & Activities" },
     { id: "career-development", label: "Career Development" },
+    { id: "contact", label: "Contact" },
   ]
 
   const scrollToSection = (id: string) => {

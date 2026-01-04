@@ -59,7 +59,7 @@ export function Contact() {
   }
 
   const socialLinks = [
-    { icon: Github, label: "GitHub", href: "https://github.com", color: "hover:text-cyan-400" },
+    { icon: Github, label: "GitHub", href: "https://github.com/hkm8850", color: "hover:text-cyan-400" },
     { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/kalim-hamza/", color: "hover:text-cyan-400" },
     { icon: Mail, label: "Email", href: "mailto:kalim.hamza22@gmail.com", color: "hover:text-emerald-400" },
   ]

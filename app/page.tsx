@@ -7,6 +7,7 @@ import { InternationalMobility } from "@/components/sections/international-mobil
 import { SustainabilityCivic } from "@/components/sections/sustainability-civic"
 import { SportActivities } from "@/components/sections/sport-activities"
 import { CV } from "@/components/sections/cv"
+import { Contact } from "@/components/sections/contact"
 import { Navigation } from "@/components/navigation"
 import { ParticleBackground } from "@/components/particle-background"
 import { MatrixRain } from "@/components/matrix-rain"
@@ -34,6 +35,7 @@ export default function Home() {
             <SustainabilityCivic />
             <SportActivities />
             <CV />
+            <Contact />
           </main>
 
           <footer className="relative z-10 border-t border-cyan-500/20 py-8 text-center text-sm text-gray-400">
