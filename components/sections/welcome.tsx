@@ -27,7 +27,7 @@ export function Welcome() {
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
           <div className="inline-block mb-6">
             <div className="px-8 py-2 rounded-full border border-cyan-500/50 bg-cyan-500/10 backdrop-blur-sm flex items-center justify-center">
-              <span className="text-cyan-400 font-mono text-sm">ePortfolio @ N7 2025-2026</span>
+              <span className="text-cyan-400 font-mono text-sm">ePortfolio @ N7 2026-2027</span>
             </div>
           </div>
 

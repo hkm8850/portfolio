@@ -55,7 +55,7 @@ export function Navigation() {
             className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent"
             whileHover={{ scale: 1.05 }}
           >
-            DS Portfolio
+            Hamza Kalim
           </motion.div>
 
           <div className="hidden md:flex items-center gap-1">

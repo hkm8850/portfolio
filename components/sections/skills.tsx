@@ -11,25 +11,25 @@ export function Skills() {
       title: "Languages",
       icon: Code2,
       color: "from-cyan-500 to-blue-500",
-      skills: ["Python", "C++", "SQL", "R", "Java", "Bash"],
+      skills: ["Python", "C", "SQL", "Java", "Bash"],
     },
     {
-      title: "Frameworks",
+      title: "Framework",
       icon: Boxes,
       color: "from-emerald-500 to-teal-500",
-      skills: ["TensorFlow", "PyTorch", "Spark", "Hadoop", "Scikit-learn", "Pandas"],
+      skills: ["TensorFlow", "Scikit-learn", "Pandas"],
     },
     {
       title: "Tools",
       icon: Wrench,
       color: "from-cyan-500 to-emerald-500",
-      skills: ["Docker", "Kubernetes", "Git", "Linux", "AWS", "Azure"],
+      skills: ["Git", "Linux"],
     },
     {
       title: "Visualization",
       icon: BarChart3,
       color: "from-emerald-500 to-cyan-500",
-      skills: ["Tableau", "Power BI", "Matplotlib", "Plotly", "D3.js", "Seaborn"],
+      skills: ["Excel", "Matplotlib"],
     },
   ]
 
@@ -108,43 +108,7 @@ export function Skills() {
           ))}
         </div>
 
-        {/* Additional competencies */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-12"
-        >
-          <Card className="p-8 bg-gradient-to-r from-cyan-500/10 via-emerald-500/10 to-cyan-500/10 border-cyan-500/30 backdrop-blur-sm">
-            <h3 className="text-xl font-bold text-emerald-400 mb-4 text-center">Core Competencies</h3>
-            <div className="flex flex-wrap justify-center gap-3">
-              {[
-                "Parallel Computing",
-                "Distributed Systems",
-                "Deep Learning",
-                "Data Pipeline Design",
-                "Algorithm Optimization",
-                "Cloud Architecture",
-                "Statistical Analysis",
-                "Model Deployment",
-              ].map((competency, index) => (
-                <motion.div
-                  key={competency}
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.5 + index * 0.05 }}
-                  whileHover={{ scale: 1.05 }}
-                >
-                  <Badge className="px-4 py-2 bg-gradient-to-br from-cyan-500 to-emerald-500 border-emerald-500/70 text-white font-semibold shadow-lg hover:from-cyan-400 hover:to-emerald-400 hover:border-cyan-400 transition-all cursor-default">
-                    {competency}
-                  </Badge>
-                </motion.div>
-              ))}
-            </div>
-          </Card>
-        </motion.div>
+
       </div>
     </section>
   );

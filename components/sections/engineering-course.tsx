@@ -11,48 +11,53 @@ export function EngineeringCourse() {
       title: "Languages",
       icon: Code2,
       color: "from-cyan-500 to-blue-500",
-      skills: ["Python", "C++", "SQL", "R", "Java", "Bash"],
+      skills: ["Python", "C", "SQL", "Java", "Bash"],
     },
     {
       title: "Frameworks",
       icon: Boxes,
       color: "from-emerald-500 to-teal-500",
-      skills: ["TensorFlow", "PyTorch", "Spark", "Hadoop", "Scikit-learn", "Pandas"],
+      skills: ["TensorFlow", "Scikit-learn", "Pandas"],
     },
     {
       title: "Tools",
       icon: Wrench,
       color: "from-cyan-500 to-emerald-500",
-      skills: ["Docker", "Kubernetes", "Git", "Linux", "AWS", "Azure"],
+      skills: ["Git", "Linux"],
     },
     {
       title: "Visualization",
       icon: BarChart3,
       color: "from-emerald-500 to-cyan-500",
-      skills: ["Tableau", "Power BI", "Matplotlib", "Plotly", "D3.js", "Seaborn"],
+      skills: ["Excel", "Matplotlib"],
     },
   ]
 
   const coursework = [
     {
-      name: "High-Performance Computing",
-      description: "Advanced parallel algorithms, MPI, OpenMP",
+      name: "Functional Programming and Language Translation",
+      description: "Functional programming, language translation, PF and TDL projects",
       icon: Code2,
     },
     {
-      name: "Big Data Systems",
-      description: "Spark, Hadoop, distributed processing",
+      name: "Automata and Language Theory, Graph Theory",
+      description: "Automata, formal languages, graph algorithms",
       icon: Boxes,
     },
     {
-      name: "Machine Learning",
-      description: "Deep learning, neural networks, model optimization",
+      name: "Software Engineering and Systems",
+      description: "Software engineering, systems design, architecture",
       icon: Wrench,
     },
     {
-      name: "Data Analytics",
-      description: "Statistical analysis, visualization, insights",
+      name: "Optimization and Operations Research",
+      description: "Optimization, operations research, algorithms",
       icon: BarChart3,
+    },
+    {
+      name: "Concurrent and Communicating Systems",
+      description: "Concurrent systems, middleware, distributed programming",
+      icon: Code2,
     },
   ]
 

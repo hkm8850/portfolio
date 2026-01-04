@@ -39,27 +39,15 @@ export function CV() {
 
   const experience = [
     {
-      title: "Data Science Intern",
-      company: "Tech Analytics Corp",
-      period: "Summer 2024",
-      description:
-        "Developed ML models for predictive analytics, reducing processing time by 40% using distributed computing.",
-      technologies: ["Python", "Spark", "TensorFlow"],
-    },
-    {
-      title: "Research Assistant",
-      company: "University HPC Lab",
-      period: "2023 - Present",
-      description: "Optimized parallel algorithms for large-scale data processing on GPU clusters.",
-      technologies: ["C++", "CUDA", "MPI"],
+      title: "Warehouse Worker (Temporary Contract)",
+      company: "PAACK – Toulouse",
+      period: "July 2025 – Aug 2025",
+      description: "Sorted and organized parcels in a logistics center. Ensured accurate dispatching and maintained work area efficiency.",
+      technologies: ["Logistics", "Organization", "Efficiency"],
     },
   ]
 
-  const certifications = [
-    { name: "AWS Certified Machine Learning - Specialty", issuer: "Amazon Web Services", year: "2024" },
-    { name: "TensorFlow Developer Certificate", issuer: "Google", year: "2024" },
-    { name: "Deep Learning Specialization", issuer: "Coursera", year: "2023" },
-  ]
+  const certifications = []
 
   return (
     <section id="career-development" className="relative py-32 px-4 scroll-mt-[72px]">
@@ -212,25 +200,9 @@ export function CV() {
             <Award className="w-8 h-8 text-cyan-400" />
             <h3 className="text-3xl font-bold text-cyan-400">Certifications & Awards</h3>
           </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            {certifications.map((cert, index) => (
-              <Card
-                key={index}
-                className="p-6 bg-gradient-to-br from-cyan-500/10 to-emerald-500/10 border-cyan-500/30 backdrop-blur-sm hover:border-cyan-400/50 transition-all duration-300 hover:scale-105"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg bg-cyan-500/20">
-                    <Award className="w-6 h-6 text-cyan-400" />
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-bold text-white mb-2">{cert.name}</h4>
-                    <p className="text-gray-400 text-sm mb-1">{cert.issuer}</p>
-                    <p className="text-cyan-400 text-sm font-semibold">{cert.year}</p>
-                  </div>
-                </div>
-              </Card>
-            ))}
-          </div>
+          <Card className="p-8 bg-gradient-to-br from-cyan-500/10 to-emerald-500/10 border-cyan-500/30 backdrop-blur-sm">
+            <p className="text-gray-300 text-center text-lg">Currently pursuing certifications</p>
+          </Card>
         </motion.div>
       </div>
     </section>
