@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { GraduationCap, Briefcase, Award, Download, Calendar } from "lucide-react"
+import { GraduationCap, Briefcase, Award, Download, Calendar, ImageIcon, Video } from "lucide-react"
 
 export function CV() {
   const education = [
@@ -65,7 +65,7 @@ export function CV() {
             </span>
           </h2>
           <p className="text-gray-400 text-lg mb-8">My academic and professional journey</p>
-          <div className="flex justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-4">
             <Button
               asChild
               className="bg-gradient-to-r from-cyan-500 to-emerald-500 hover:from-cyan-600 hover:to-emerald-600 text-white font-semibold px-6 py-3 text-base shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/50 transition-all duration-300"
@@ -96,6 +96,28 @@ export function CV() {
               <a href="/presentation.pptx" download="Hamza_Kalim_Presentation.pptx">
                 <Download className="w-5 h-5 mr-2" />
                 Download PPP
+              </a>
+            </Button>
+
+            <Button
+              asChild
+              className="bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:from-violet-600 hover:to-fuchsia-600 text-white font-semibold px-6 py-3 text-base shadow-lg shadow-violet-500/25 hover:shadow-violet-500/40 transition-all duration-300"
+              size="lg"
+            >
+              <a href="/images/conflict-management-poster.png" target="_blank" rel="noreferrer">
+                <ImageIcon className="w-5 h-5 mr-2" />
+                Conflict Management Poster
+              </a>
+            </Button>
+
+            <Button
+              asChild
+              className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold px-6 py-3 text-base shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 transition-all duration-300"
+              size="lg"
+            >
+              <a href="/conflict-management-video.mp4" target="_blank" rel="noreferrer">
+                <Video className="w-5 h-5 mr-2" />
+                Conflict Management Video
               </a>
             </Button>
           </div>
